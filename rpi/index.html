@@ -426,6 +426,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wifi-configuration" class="md-nav__link">
+    Wifi Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Wifi Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ucsd-protected" class="md-nav__link">
+    UCSD-PROTECTED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-wifi" class="md-nav__link">
+    More WiFi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -692,6 +726,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wifi-configuration" class="md-nav__link">
+    Wifi Configuration
+  </a>
+  
+    <nav class="md-nav" aria-label="Wifi Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ucsd-protected" class="md-nav__link">
+    UCSD-PROTECTED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#more-wifi" class="md-nav__link">
+    More WiFi
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    Links
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -936,7 +1004,7 @@ import board
 import time
 
 dht_pin = board.D4
-dht_sensor = adafruit_dht.DHT22(dht_pin)
+dht_sensor = adafruit_dht.DHT22(dht_pin, use_pulseio=False)
 
 temp_c = dht_sensor.temperature
 temp_f = temp_c * (9 / 5) + 32
@@ -955,10 +1023,9 @@ print("Humidity =", hum, '%')
 </code></pre>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>If you have some error with <code>libgpio_pulsein</code>, you may have to kill the existing process using that library.</p>
+<p>We are initializing <code>dht_sensor</code> without pulseio API with <code>use_pulseio=False</code>. </p>
+<p>In case you need to use pulseio and have some error with <code>libgpio_pulsein</code>, you may have to kill the existing process using that library.</p>
 <p>Try running this terminal command: <code>kill $(pgrep libgpio)</code></p>
-<p>Alternatively, you can initialize <code>dht_sensor</code> without pulseio like this: </p>
-<p><code>dht_sensor = adafruit_dht.DHT22(dht_pin, use_pulseio=False)</code></p>
 </div>
 <h3 id="buttons">Buttons</h3>
 <p>To connect a button, we don't need external components as long as it's connected to an input pin with pullup enabled.</p>
@@ -1002,7 +1069,7 @@ line = ser.readline()
 print(line.decode('utf_8'))
 ser.close()
 </code></pre>
-<p><a href="https://drive.google.com/drive/u/1/folders/1pWqNAAlfToCkn8ogAFkDbfGXh-AHft0g">Link to Examples from class</a></p>
+<p><a href="https://github.com/curtisrlee/ece196-fa21/tree/main/examples">Link to Examples from class</a></p>
 <h3 id="more-hardware">More Hardware</h3>
 <p>There are nearly endless hardware components that you can use with the Raspberry Pi, including but not limited to the items in kit. If you would like to use other hardware components, here's some things to keep in mind:</p>
 <ul>
@@ -1027,6 +1094,45 @@ ser.close()
 <li>Do not eat electronic components.</li>
 </ul>
 </div>
+<h2 id="wifi-configuration">Wifi Configuration</h2>
+<h3 id="ucsd-protected">UCSD-PROTECTED</h3>
+<p>If you want to connect to <em>UCSD-PROTECTED</em> or any of the <em>RESNET</em> networks, manual configuration is needed because they use WPA-Enterprise.</p>
+<p>You can configure the Pi to connect to these network by editing a file with the following command:</p>
+<pre><code>sudo mousepad /etc/wpa_supplicant/wpa_supplicant.conf
+</code></pre>
+<p>And putting this template into the file:</p>
+<pre><code>ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+    ssid=&quot;UCSD-PROTECTED&quot;
+    scan_ssid=1
+    key_mgmt=WPA-EAP
+    eap=PEAP
+    identity=&quot;YOUR UCSD USERNAME HERE&quot;
+    password=&quot;YOUR UCSD PASSWORD HERE&quot;
+    phase1=&quot;peapver=0&quot;
+    phase2=&quot;MSCHAPV2&quot;
+    disabled=1
+}
+</code></pre>
+<ul>
+<li>Replace <code>identity</code> and <code>password</code> with your information.</li>
+</ul>
+<h3 id="more-wifi">More WiFi</h3>
+<ul>
+<li>The Process for any <em>RESNET</em> network is the same as previous section, just copy and paste another <code>network</code> block and change the <code>ssid</code> to the proper <em>RESNET</em> wifi name.</li>
+<li>Same with <em>eduroam</em>, except <em>eduroam</em> requires full UCSD email for <code>identity</code>.</li>
+</ul>
+<p>Additionally, you can add multiple <code>network</code> blocks into the configuration file. If you want to set up the Pi to automatically connect to another (standard WPA2) Wifi network (ie. at home) you can also add another block below it like this:</p>
+<pre><code>network={
+    ssid=&quot;YOUR WIFI NAME&quot;
+    psk=&quot;YOUR WIFI PASSWORD&quot;
+}
+</code></pre>
+<h2 id="links">Links</h2>
+<p><a href="https://www.mrswirlyeyes.com/tutorials/raspberry_pi_setup">Raspberry Pi Setup Tutorial from 2019</a></p>
                 
               
               
