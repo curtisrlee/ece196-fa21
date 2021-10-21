@@ -273,7 +273,7 @@ Now if we run this code:
     import time
 
     dht_pin = board.D4
-    dht_sensor = adafruit_dht.DHT22(dht_pin)
+    dht_sensor = adafruit_dht.DHT22(dht_pin, use_pulseio=False)
 
     temp_c = dht_sensor.temperature
     temp_f = temp_c * (9 / 5) + 32
@@ -292,13 +292,11 @@ It will read the sensor and print results. With a loop we can also make run inde
         time.sleep( 2 )
 
 !!! info
-    If you have some error with `libgpio_pulsein`, you may have to kill the existing process using that library.
+    We are initializing `dht_sensor` without pulseio API with `use_pulseio=False`. 
+
+    In case you need to use pulseio and have some error with `libgpio_pulsein`, you may have to kill the existing process using that library.
     
     Try running this terminal command: `kill $(pgrep libgpio)`
-
-    Alternatively, you can initialize `dht_sensor` without pulseio like this: 
-    
-    `dht_sensor = adafruit_dht.DHT22(dht_pin, use_pulseio=False)`
 
 ### Buttons
 
@@ -353,7 +351,7 @@ Here is an example to send a single byte from python script to the external devi
     print(line.decode('utf_8'))
     ser.close()
 
-[Link to Examples from class](https://drive.google.com/drive/u/1/folders/1pWqNAAlfToCkn8ogAFkDbfGXh-AHft0g)
+[Link to Examples from class](https://github.com/curtisrlee/ece196-fa21/tree/main/examples)
 
 
 ### More Hardware
@@ -373,3 +371,53 @@ There are nearly endless hardware components that you can use with the Raspberry
     * Do not plug jumper wires from the wall into the Pi.
     * Do not plug jumper wires from the wall into the breadboard.
     * Do not eat electronic components.
+
+## Wifi Configuration
+
+### UCSD-PROTECTED
+
+If you want to connect to *UCSD-PROTECTED* or any of the *RESNET* networks, manual configuration is needed because they use WPA-Enterprise.
+
+You can configure the Pi to connect to these network by editing a file with the following command:
+
+```
+sudo mousepad /etc/wpa_supplicant/wpa_supplicant.conf
+```
+
+And putting this template into the file:
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+
+network={
+	ssid="UCSD-PROTECTED"
+	scan_ssid=1
+	key_mgmt=WPA-EAP
+	eap=PEAP
+	identity="YOUR UCSD USERNAME HERE"
+	password="YOUR UCSD PASSWORD HERE"
+	phase1="peapver=0"
+	phase2="MSCHAPV2"
+	disabled=1
+}
+```
+* Replace `identity` and `password` with your information.
+
+### More WiFi
+
+* The Process for any *RESNET* network is the same as previous section, just copy and paste another `network` block and change the `ssid` to the proper *RESNET* wifi name.
+* Same with *eduroam*, except *eduroam* requires full UCSD email for `identity`.
+
+Additionally, you can add multiple `network` blocks into the configuration file. If you want to set up the Pi to automatically connect to another (standard WPA2) Wifi network (ie. at home) you can also add another block below it like this:
+
+```
+network={
+    ssid="YOUR WIFI NAME"
+    psk="YOUR WIFI PASSWORD"
+}
+```
+
+## Links
+[Raspberry Pi Setup Tutorial from 2019](https://www.mrswirlyeyes.com/tutorials/raspberry_pi_setup)
