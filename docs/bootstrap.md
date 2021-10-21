@@ -206,3 +206,10 @@ Finally, its a good idea to associate color with each entry on the LED table wit
 Here is what the final result can look like:
 
 ![finished-website.png](img/finished-website.png)
+
+## Data Visualization Methods
+
+We are able acquire tons of data with our DHT22 sensor, and potentially other sensor modules, however, currently they are not being recorded or visualized over time.
+
+We can create more advanced views of our data with yet another JavaScript framework called [**Chart.js**](https://www.chartjs.org/). With Chart.js we can create good looking and interactive [graphs of all types](https://www.chartjs.org/samples/latest/).
+

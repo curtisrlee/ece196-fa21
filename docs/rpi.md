@@ -1,5 +1,5 @@
 # Intro to Raspberry Pi
-_Rewritten by Curtis Lee, originally by Ravi Patel_
+_Written by Curtis Lee, pictures by Ravi Patel_
 
 !!! note "Recommended Reading"
     Please read the [Vilros Quick Start Guide](https://cdn.shopify.com/s/files/1/0195/1344/2404/files/QUICKSTART_09_06_2017_EDITION.pdf?4444633349731588961) (included with the Raspberry Pi kit) up to section 2.5 (and skip 2.3).
@@ -7,7 +7,7 @@ _Rewritten by Curtis Lee, originally by Ravi Patel_
     Then you can skip to [Pi Configuration](#pi-configuration).
 
 ## Slides
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSq1mC40Q7Eu7uXr-sOdkioqP7HsvfAA9rTIQq63MsaLt0Pw3BHyRLQ1Y6hXH5TKEopF2Kpw3OnC3VX/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSoRq0_4oykLQq-9eKQqJ7qEyALr3dmPlo7-Wr0yri2f_C1NOXQqm9THRSnRA_cuevilfTwMNq0sx5a/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## What is Raspberry Pi?
 

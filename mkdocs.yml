@@ -1,15 +1,16 @@
-site_name: ECE196 IOT Documentation
-repo_url: https://github.com/curtisrlee/ece196-fall2020-iot
-repo_name: ece196-fall2020-iot
+site_name: ECE196 Documentation
+repo_url: https://github.com/curtisrlee/ece196-fa21
+repo_name: ece196-fa21
 edit_uri: ""
 nav:
     - Home: index.md
+    - Python: python.md
     - Raspberry Pi: rpi.md
+    - IOT Intro: iot-project.md
     - Firebase: firebase.md
     - VueJS: web.md
     - Bootstrap: bootstrap.md
     - Security: secure.md
-    - Graphs: graphs.md
 theme:
     name: material
     icon:
