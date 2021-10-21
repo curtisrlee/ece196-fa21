@@ -1,6 +1,5 @@
-# ECE196 IoT Project
+# ECE196
 
 Please see:
 
-* [Documentation](https://curtisrlee.github.io/ece196-fall2020-iot/)
-* [Live Demo](https://curtisrlee.github.io/ece196-fall2020-iot-demo/)
+* [Documentation](https://curtisrlee.github.io/ece196-fa21/)
