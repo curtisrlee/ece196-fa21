@@ -6,6 +6,7 @@ nav:
     - Home: index.md
     - Python: python.md
     - Raspberry Pi: rpi.md
+    - Git/Github: https://www.mrswirlyeyes.com/tutorials/introduction_to_git_github
     - IOT Intro: iot-project.md
     - Firebase: firebase.md
     - VueJS: web.md
