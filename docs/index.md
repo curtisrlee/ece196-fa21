@@ -16,7 +16,7 @@ Recommended for additional tutorial items:
 * [Google Account](https://firebase.google.com) to use Firebase
 
 ## Getting Help
-If you are ECE196 student and have question please post on Piazza:
+If you are an ECE196 student and have question please post on Piazza:
 
 [:fontawesome-solid-external-link-square-alt: Piazza](https://piazza.com/class/ktvwbm65luz4vm)
 
