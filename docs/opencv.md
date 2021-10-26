@@ -1,6 +1,7 @@
 # ECE 196 Intro to OpenCV
 
 
+*Written by Dillon Hicks*
 
 !!! quote
 
@@ -48,7 +49,7 @@ import numpy as np
 
 
 !!! info
-    When installing OpenCV from `pip`, we get the default version, which doesn't have many useful add-ons such as CUDA-acceleration (Nvidia GPU acceleration). Although this installation takes a very long time (hours in many cases), it may be preferable when GPU acceleration is available to speed up processing times. 
+    When installing OpenCV from `pip`, we get the default version, which doesn't have many useful add-ons such as CUDA-acceleration (Nvidia GPU acceleration). We can compile OpenCV from directly from source, but  this installation takes a very long time (hours in many cases). However, compiling from source may be preferable when GPU acceleration is available to speed up processing times. 
 
 
 
@@ -78,7 +79,7 @@ cv2.imshow("Image", my_image)
 You may then notice that it is a bit tough to close this window. To close this window easily, you can set a wait key using `waitKey()`, and close OpenCV windows using `destroyAllWindows()`. If this wait key is pressed, then the next line will run and  all windows will be destroyed (closed)
 
 ```python
-#If q is pressed, close all opencv windows, waits x seconds for q to be pressed
+#If q is pressed during x milliseconds wait time, close all opencv windows
 x = 0
 if cv2.waitKey(x) & 0xFF == ord('q'):
     cv2.destroyAllWindows()

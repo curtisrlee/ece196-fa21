@@ -9,8 +9,6 @@ frame = cv2.GaussianBlur(frame, (11, 11), 0)
 frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
 
-
-
 ret, mask = cv2.threshold(frame, 100, 255, cv2.THRESH_BINARY)
 
 mask = cv2.erode(mask, None, iterations=3)
@@ -27,7 +25,7 @@ for contour in contours:
     box = cv2.boxPoints(rect)
     box = np.int0(box)
 
-cv2.imshow('image', framecolor)
+cv2.imshow('image', frame_color)
 
 
 
