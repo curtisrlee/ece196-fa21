@@ -14,7 +14,7 @@
     
     
       
-        <title>Firebase - ECE196 Documentation</title>
+        <title>OpenCV - ECE196 Documentation</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#intro-to-backend-development" class="md-skip">
+        <a href="#ece-196-intro-to-opencv" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Firebase
+              OpenCV
             
           </span>
         </div>
@@ -264,11 +264,154 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../opencv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          OpenCV
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         OpenCV
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slides" class="md-nav__link">
+    Slides
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    Setup
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operating-on-images" class="md-nav__link">
+    Operating on Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating on Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-images" class="md-nav__link">
+    Opening Images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#capturing-video" class="md-nav__link">
+    Capturing Video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-on-images" class="md-nav__link">
+    Drawing on images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facial-detection" class="md-nav__link">
+    Facial Detection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#image-processing" class="md-nav__link">
+    Image Processing
+  </a>
+  
+    <nav class="md-nav" aria-label="Image Processing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#blur" class="md-nav__link">
+    Blur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thresholding" class="md-nav__link">
+    Thresholding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#morpological-transformations" class="md-nav__link">
+    Morpological Transformations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contour-detection" class="md-nav__link">
+    Contour Detection
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -294,192 +437,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Firebase
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../firebase/" class="md-nav__link">
         Firebase
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#slides" class="md-nav__link">
-    Slides
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fundamentals" class="md-nav__link">
-    Fundamentals
-  </a>
-  
-    <nav class="md-nav" aria-label="Fundamentals">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-full-stack" class="md-nav__link">
-    What is Full Stack?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#what-is-backend" class="md-nav__link">
-    What is Backend?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#intro-to-firebase" class="md-nav__link">
-    Intro to Firebase
-  </a>
-  
-    <nav class="md-nav" aria-label="Intro to Firebase">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-project" class="md-nav__link">
-    Creating a Project
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-collaborators" class="md-nav__link">
-    Adding Collaborators
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#realtime-database" class="md-nav__link">
-    Realtime Database
-  </a>
-  
-    <nav class="md-nav" aria-label="Realtime Database">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#choosing-a-database" class="md-nav__link">
-    Choosing a Database
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-database" class="md-nav__link">
-    Creating a Database
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obtaining-keys" class="md-nav__link">
-    Obtaining Keys
-  </a>
-  
-    <nav class="md-nav" aria-label="Obtaining Keys">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-service-account" class="md-nav__link">
-    Adding a Service Account
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-an-app" class="md-nav__link">
-    Adding an App
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connecting-to-firebase" class="md-nav__link">
-    Connecting to Firebase
-  </a>
-  
-    <nav class="md-nav" aria-label="Connecting to Firebase">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#complete-code" class="md-nav__link">
-    Complete Code
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -555,6 +517,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#slides" class="md-nav__link">
     Slides
   </a>
@@ -562,23 +531,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fundamentals" class="md-nav__link">
-    Fundamentals
+  <a href="#setup" class="md-nav__link">
+    Setup
   </a>
   
-    <nav class="md-nav" aria-label="Fundamentals">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operating-on-images" class="md-nav__link">
+    Operating on Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Operating on Images">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#what-is-full-stack" class="md-nav__link">
-    What is Full Stack?
+  <a href="#opening-images" class="md-nav__link">
+    Opening Images
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#what-is-backend" class="md-nav__link">
-    What is Backend?
+  <a href="#capturing-video" class="md-nav__link">
+    Capturing Video
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawing-on-images" class="md-nav__link">
+    Drawing on images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text" class="md-nav__link">
+    Text
   </a>
   
 </li>
@@ -589,110 +579,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#intro-to-firebase" class="md-nav__link">
-    Intro to Firebase
+  <a href="#facial-detection" class="md-nav__link">
+    Facial Detection
   </a>
-  
-    <nav class="md-nav" aria-label="Intro to Firebase">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    Getting Started
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-project" class="md-nav__link">
-    Creating a Project
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-collaborators" class="md-nav__link">
-    Adding Collaborators
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#realtime-database" class="md-nav__link">
-    Realtime Database
-  </a>
-  
-    <nav class="md-nav" aria-label="Realtime Database">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#choosing-a-database" class="md-nav__link">
-    Choosing a Database
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-database" class="md-nav__link">
-    Creating a Database
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#obtaining-keys" class="md-nav__link">
-    Obtaining Keys
-  </a>
-  
-    <nav class="md-nav" aria-label="Obtaining Keys">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-service-account" class="md-nav__link">
-    Adding a Service Account
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#adding-an-app" class="md-nav__link">
-    Adding an App
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#connecting-to-firebase" class="md-nav__link">
-    Connecting to Firebase
+  <a href="#image-processing" class="md-nav__link">
+    Image Processing
   </a>
   
-    <nav class="md-nav" aria-label="Connecting to Firebase">
+    <nav class="md-nav" aria-label="Image Processing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#complete-code" class="md-nav__link">
-    Complete Code
+  <a href="#blur" class="md-nav__link">
+    Blur
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thresholding" class="md-nav__link">
+    Thresholding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#morpological-transformations" class="md-nav__link">
+    Morpological Transformations
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contour-detection" class="md-nav__link">
+    Contour Detection
   </a>
   
 </li>
@@ -715,250 +639,268 @@
               
                 
                 
-                <h1 id="intro-to-backend-development">Intro to Backend Development</h1>
-<p><em>Written by Curtis Lee, pictures by Ravi Patel.</em></p>
-<h2 id="slides">Slides</h2>
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRXBqF9I6MXXwBKcu45NoCoyln25HrDJi9zKSZkGfG9stEYkd0YLoFFBT-zdKhrTAxJbKU02XXR1s_t/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-<h2 id="fundamentals">Fundamentals</h2>
-<h3 id="what-is-full-stack">What is Full Stack?</h3>
-<p>It boils down to three (3) concepts:</p>
-<ol>
-<li><strong>Frontend</strong> software that the user sees and interacts with.</li>
-<li><strong>Backend</strong> software that can handle specific requests and dynamically sends/recieves information to/from the user.</li>
-<li><strong>Database</strong> that stores pretty much all information our app uses.</li>
-</ol>
-<p>There are endless configurations depending on the application. Sometimes, these components may be combined or further seperated to varying degrees. 
-Regardless, all components must work together to produce a web app. </p>
-<p>Imagine a trinity of cards: <strong>Frontend</strong>, <strong>Backend</strong>, and <strong>Database</strong>. A developer that holds all three cards is said to have the "<strong>Full Stack</strong>", and thus can build a complete web app.</p>
-<h3 id="what-is-backend">What is Backend?</h3>
-<p>In traditional web development, backend software runs the "business logic" of our app. For example, a basic workflow may be like this:</p>
-<ol>
-<li>The user fills out a login form on our app.</li>
-<li>The user's browser sends a login request + the credentials to the backend server.</li>
-<li>The backend recieves this information.</li>
-<li>The backend queries the database to see if the user exists.</li>
-<li>If the user exists, see if username &amp; password match.</li>
-<li>If everything is correct, send our content back to the user. Otherwise, send an error message.</li>
-</ol>
-<p>Setting up a backend server is usually not easy. We would need to have extensive knowledge of setting up servers, networking, operating systems, and software. And that's before we even write any code, which may also require mastering multiple programming languages!</p>
-<p>This is not feasible without the proper expertise and lots of time. So we will not be doing that. </p>
-<p>Instead, we will leverage <strong>Cloud Services</strong> that do the hard work for us, so we can better focus on our ideas.</p>
-<h2 id="intro-to-firebase">Intro to Firebase</h2>
+                <h1 id="ece-196-intro-to-opencv">ECE 196 Intro to OpenCV</h1>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
-<p>Firebase is Backend as a Service ( BaaS ) by Google.</p>
+<p><strong><em>What is OpenCV?</em></strong><br />
+OpenCV is a library of programming functions mainly aimed at real-time computer vision (CV)</p>
 </div>
-<p>Firebase is Google's solution to the problem. Firebase has reduced the entire <strong>Backend + Database</strong> stack into simpler services that we can rent out. Essentially, we are outsourcing all the hard technical work to Google.</p>
-<h3 id="getting-started">Getting Started</h3>
-<p>Using Firebase is comparable to using any other Google cloud service like Gmail or Drive. First, we create a <strong>Project</strong> for our product. Then we can add different services such as <strong>Realtime Database</strong> or <strong>Authentication</strong> and create keys to be used by one or more <strong>Apps</strong> utilizng our Project's services.</p>
-<h4 id="creating-a-project">Creating a Project</h4>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Laptop with Anaconda installed and a webcam</li>
+<li>OR RPi with camera attached</li>
+</ul>
+<h2 id="slides">Slides</h2>
+<iframe src="https://docs.google.com/presentation/d/1mdggvESBlnIzyURRJIF40dSzkuPSuwzPU3LYPiIM3JU/preview?slide=id.p&amp;usp=embed_facebook" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<h2 id="setup">Setup</h2>
+<p>Before we get started, we need to set up all of the libraries necessary for this lecture. With your conda environment activated, install the necesary dependencies by typing the below coimmands into your terminal window.</p>
+<p><strong>OpenCV</strong></p>
+<p><code>pip install opencv-contrib-python</code></p>
+<p><strong>imutils (image utility module from Adrian Rosebrock - https://www.pyimagesearch.com)</strong></p>
+<p><code>pip install imutils</code></p>
+<p><strong>NumPy (For efficient multi-dimensional python arrays)</strong></p>
+<p><code>pip install numpy</code></p>
+<p>To test these installations, create a new python script and run it with the following import statements:</p>
+<pre><code class="language-python">import cv2
+import imutils
+import numpy as np
+</code></pre>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>When installing OpenCV from <code>pip</code>, we get the default version, which doesn't have many useful add-ons such as CUDA-acceleration (Nvidia GPU acceleration). Although this installation takes a very long time (hours in many cases), it may be preferable when GPU acceleration is available to speed up processing times. </p>
+</div>
+<h2 id="operating-on-images">Operating on Images</h2>
+<p>The first obvious step for basic computer vision functions is opening single images. There are some functions that make this very easy to do.</p>
+<h3 id="opening-images">Opening Images</h3>
+<p>You can read an image from you computer into python as a numpy array using <code>imread()</code>. We can then do any numpy operations that you could normally do on this array.</p>
+<pre><code class="language-python">#Loads an image with filename name into my_image
+
+my_image = cv2.imread(name)
+</code></pre>
+<p>We can then open this image in a separate window using <code>imshow()</code>.</p>
+<pre><code class="language-python">#Opens a new window titled &quot;Image&quot;, displaying my_image
+
+cv2.imshow(&quot;Image&quot;, my_image)
+</code></pre>
+<p>You may then notice that it is a bit tough to close this window. To close this window easily, you can set a wait key using <code>waitKey()</code>, and close OpenCV windows using <code>destroyAllWindows()</code>. If this wait key is pressed, then the next line will run and  all windows will be destroyed (closed)</p>
+<pre><code class="language-python">#If q is pressed, close all opencv windows, waits x seconds for q to be pressed
+x = 0
+if cv2.waitKey(x) &amp; 0xFF == ord('q'):
+    cv2.destroyAllWindows()
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>For WSL (Windows Subsystem for Linux), you may get errors when plotting using <code>imshow()</code> as GUI apps are not currently supported unless you are on the newest version of WSL and have the proper drivers installed. It is recomended that your native OS is used for compatibility with camera hardware.</p>
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/tutorials/gui-apps">Make sure you update WSL and the prerequisite drivers</a></p>
+</div>
+<h3 id="capturing-video">Capturing Video</h3>
+<p>We can also create a video source as well for us to read videos from the onboard camera.</p>
+<p>We can first make a video object using <code>VideoCapture()</code> from which to grab frames from at every iteration of a while loops using <code>read()</code>. Combining this with <code>imshow()</code> and other flow control functions, we can display images from our camera feed. </p>
+<pre><code class="language-python">#The following recipe gets a numpy array at each iteration of the while loop
+video = cv2.VideoCapture(0)
+
+while True:
+    ret, frame = video.read()
+
+    # Display the resulting frame
+    cv2.imshow('image', frame)
+    if cv2.waitKey(1) &amp; 0xFF == ord('q'):
+        break
+
+cv2.destroyAllWindows()
+
+</code></pre>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you try to run the code above on a RPi using the RPi camera, it will not work by default. Make sure to enable the camera by following the following steps:</p>
 <ol>
-<li>
-<p>Sign in to <a href="https://firebase.google.com/">firebase.google.com</a> (feel free to use your UCSD account)</p>
-</li>
-<li>
-<p>Click <strong>Go to Console</strong> in the top right corner.</p>
-</li>
-<li>
-<p>Click <strong>Add Project</strong>.</p>
-</li>
-<li>
-<p>Fill out the forms and continue.</p>
+<li><a href="https://geek-university.com/raspberry-pi/enable-camera-in-raspi-config/">Enable the camera using <code>sudo-raspi-config</code></a></li>
+<li>Install picamera using <code>pip install "picamera[array]"</code> and use the picamera functions for reading pictures</li>
+</ol>
+<p><a href="https://www.pyimagesearch.com/2015/03/30/accessing-the-raspberry-pi-camera-with-opencv-and-python/">For a more detailed tutorial, use this link</a></p>
+</div>
+<h3 id="drawing-on-images">Drawing on images</h3>
+<p>In addition, you can also resize an image to more easily display it, or reduce computation time for smaller images. From Adrian Rosebrock's library imutils, we can resize an image to a width of <code>pixels</code> with</p>
+<pre><code class="language-python">pixels = 360
+imutils.resize(my_image, pixels)
+</code></pre>
+<p>In addition, we can also place shapes onto images using several built in functions. Below, we use the <code>circle()</code> and <code>rectangle()</code> functions, but many more are available in this <a href="https://opencv-tutorial.readthedocs.io/en/latest/draw/draw.html">OpenCV documentation</a></p>
+<pre><code class="language-python">#places a green circle at (100,100) with r = 25 with a thickness of 10 pixels
+cv2.circle(my_image, (100,100), 25, (0,255,0), 10)
+cv2.rectangle(my_image, (400,300), (500,400), (0,0,255), 10)
+</code></pre>
+<p><img alt="image" src="../img_cv/draw.png" /></p>
+<h3 id="text">Text</h3>
+<p>To add more information to images, we can also add text. This is fairly easy to do as we can simply get a font built into OpenCV, and <code>putText()</code> to place a given string at a location.</p>
+<pre><code class="language-python">font = cv2.FONT_HERSHEY_DUPLEX
+cv2.putText(frame, text_string, location, font, fontscale, color, thickness)
+</code></pre>
+<p>For example, for the below image, the code used was:</p>
+<pre><code class="language-python">font = cv2.FONT_HERSHEY_DUPLEX
+cv2.putText(frame, &quot;ECE 196 Rocks&quot;, (100,100), font, 1, (0,255,0), 3)
+</code></pre>
+<p><img alt="image" src="../img_cv/text.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><strong>Exercise 1</strong></p>
+<p>Combine all of the following functions above to open an image and do some modifications to it!</p>
 <ol>
-<li>Any name is ok. I recommend <em>ECE196-Fall2020-IOT-YourName</em>.</li>
-<li>Google Analytics is optional. We won't be using it, but it could be nice to have if we further develop the app later.</li>
-<li>Accept terms and conditions.</li>
+<li>Open an image of your choice and show it in a window that you can close, </li>
+<li>Resize the image to 900 pixels wide</li>
+<li>Draw a rectangle at the center of the image, and place a line of text above that square</li>
 </ol>
-</li>
-<li>
-<p>Once everything is set up, it should look something similar to this.</p>
-</li>
-</ol>
-<p><img alt="" src="https://lh6.googleusercontent.com/Uk1D4WbEufLgK8wvS6Tpr2DyEW_lRnUAVz8vUy_P80Wc-BtX3rKisuyLvin_Pn8x50vzD7RSbpG-Sg47NMkKr1smTg29LbO-BaTKHuuv8_cVPeFHmv1WT3JGLH5ye0KmZi_P5cFL" /></p>
-<h4 id="adding-collaborators">Adding Collaborators</h4>
-<ol>
-<li>To add collaborators to the project, click on the <strong>Settings</strong> icon located on the top left. </li>
-<li>Select <strong>Users and permissions</strong>.</li>
-<li>Click the <strong>Add member</strong> button.</li>
-<li>As for roles, select either <strong>Owner</strong> or <strong>Editor</strong>. This can always be changed later.</li>
-<li>Once the member is added, they should receive an email invitation to join.</li>
-</ol>
-<h3 id="realtime-database">Realtime Database</h3>
-<h4 id="choosing-a-database">Choosing a Database</h4>
-<p>Firebase offers two different products for our Database needs. </p>
-<p>For the Free Plan as of 2020, here are the key similarities and differences:</p>
+</div>
+<h2 id="facial-detection">Facial Detection</h2>
+<p>Next up, let's go over basic <strong>Facial Detection</strong>. </p>
+<p>Facial detection is a fun task as it allows us to see if any faces are in our images. This is done using a <a href="https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework">Haar Cascade Classifier</a>. This works by making many small ML classifiers that are then <em>cascaded</em> together to detect small visual features, such as those in the image below, for certain objects. These features are shown below for facial detection. In this case, these Haar Cascade Classifiers are trained to detect faces, but these classifiers can detect many different types of objects. </p>
+<p><img alt="image" src="../img_cv/haar.png" /></p>
+<p>Since we aren't worrying about ML portions in this lecture, we won't go too in to detail, but OpenCV allows us to implement these algorithms without knowing anything about ML to accomplish cool tasks!</p>
+<p>First, let's look at what XMLs built in to OpenCV can be used to detect faces. </p>
+<p><a href="https://github.com/opencv/opencv/tree/master/data/haarcascades">HAAR CASCADE XMLS</a> </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From the above Github link, you may notice that there are many different trained models for different detection tasks. You can interchange these XMLs to accomplish many tasks, including body, eye, and face detection.</p>
+</div>
+<pre><code class="language-python">faceCascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_alt2.xml')
+</code></pre>
+<p>Once we load the cascade classifier, we can then detect the faces, which are returned from the <code>detectMultiScale</code> function, from which we can get the top left corner and width and height of the bounding box around each detected object.</p>
+<pre><code class="language-python">faces = faceCascade.detectMultiScale(frame)
+for (x, y, w, h) in faces:
+    #do something
+</code></pre>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><strong>Exercise 2</strong></p>
+<p>Now it's time to do some cooler things! </p>
+<ul>
+<li>From your video source, detect the faces in each frame and place a rectangle around each face. Test that this works by detecting your face in your video.</li>
+</ul>
+<p>Hint: use <code>cv2.rectangle</code> and use the <code>w</code>, and <code>h</code>, the width and height, respectively, to offset the rectangle from the top corner. i.e. (x+w,y+h)</p>
+<p>If you have extra time, try to use some of the other Haar classifiers to detect different objects!</p>
+</div>
+<p><img alt="image" src="../img_cv/face.png" /></p>
+<p><img alt="image" src="../img_cv/eyes.png" /></p>
+<h2 id="image-processing">Image Processing</h2>
+<p>Although facial detection is an easy task to do with OpenCV, not all tasks are as straightforward. One task that is essential to any computer vision workflow is <strong>Image Processing</strong>.</p>
+<p>We process our images for one main reason, to make them easier for our algorithms we develop to analyze. One main way we can do this is to remove <strong>Noise</strong>. Noise is essentially unwanted data in our images, and this noise can greatly affect how our algorithms perform. Thus, it is essential to reduce the amount of noise in our images. </p>
+<p><img alt="image" src="../img_cv/noise.png" /></p>
+<h3 id="blur">Blur</h3>
+<p>One important way to remove noise is <strong>Blurring</strong>. Standard intuition may tell you that blurring an image makes it worse, which to the naked eye, is true! However, the human brain is made to ignore small bits of noise in images, but computers <strong>are not</strong>. Blurring can get rid of small details that are ultimately unnecessary to the performance of our algorithms, limiting the ability of small details to "trick" our algorithms.</p>
+<p>One common blurring algorithm is the Gaussian Blur, which we will use in this lecture to "smooth" our image.</p>
+<p>For other blurring algorithms, feel free to check out <a href="https://www.pyimagesearch.com/2021/04/28/opencv-smoothing-and-blurring/">this tutorial by Adrian Rosebrock</a></p>
+<pre><code class="language-python">#applied a gaussian blur with a standard deviation of 11
+frame = cv2.GaussianBlur(frame, (11, 11), 0)
+</code></pre>
 <table>
 <thead>
 <tr>
-<th>Spec</th>
-<th>Realtime</th>
-<th>Firestore</th>
+<th align="center">Unblurred Image</th>
+<th align="center">Blurred Image</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Type</td>
-<td>NoSQL</td>
-<td>NoSQL</td>
-</tr>
-<tr>
-<td>Structure</td>
-<td>Basic JSON</td>
-<td>Documents &amp; Collections</td>
-</tr>
-<tr>
-<td>Storage</td>
-<td>10 GB</td>
-<td>10 GB</td>
-</tr>
-<tr>
-<td>Bandwidth</td>
-<td>10GiB/month</td>
-<td>10GiB/month</td>
-</tr>
-<tr>
-<td>Simultaneous Connections</td>
-<td>100 max</td>
-<td>No limit</td>
-</tr>
-<tr>
-<td>Document writes</td>
-<td>No limit</td>
-<td>20K/day</td>
-</tr>
-<tr>
-<td>Document reads</td>
-<td>No limit</td>
-<td>50K/day</td>
-</tr>
-<tr>
-<td>Document deletes</td>
-<td>No limit</td>
-<td>20K/day</td>
+<td align="center"><img alt="image" src="../img_cv/tennis_balls.png" /></td>
+<td align="center"><img alt="image" src="../img_cv/blurred.png" /></td>
 </tr>
 </tbody>
 </table>
-<div class="admonition info">
-<p class="admonition-title">Read More</p>
-<ul>
-<li><a href="https://firebase.google.com/docs/database/rtdb-vs-firestore">Cloud Firestore vs Realtime Database</a></li>
-<li><a href="https://firebase.google.com/pricing">Firebase Pricing plans</a></li>
-<li><a href="https://www.mongodb.com/nosql-explained/nosql-vs-sql">SQL vs NoSQL</a></li>
-</ul>
-</div>
-<p>For our application, we will pick <strong>Realtime Database</strong>, for these reasons:</p>
-<ul>
-<li>Basic JSON structure is easy to learn</li>
-<li>Not many users, but document I/O adds up fast.</li>
-</ul>
-<h4 id="creating-a-database">Creating a Database</h4>
+<h3 id="thresholding">Thresholding</h3>
+<p>Thresholding can be used to create a mask</p>
+<p>We can also set an upper and lower boundary for our threshold. Thus, the output mask would be 0 if it is outside these lower and upper bounds, and 1 otherwise</p>
+<pre><code class="language-python"># Tuple containing 2 lists of BGR pixel values denoting minimum and maximum example red values
+boundaries = ([17, 17, 150], [125, 125, 255])
+
+# Setting lower and upper bounds
+lower = np.array(boundaries[0], dtype = &quot;uint8&quot;)
+upper = np.array(boundaries[1], dtype = &quot;uint8&quot;)
+
+# Transforms the above boundaries into numpy arrays
+mask = cv2.inRange(frame, lower, upper)
+</code></pre>
+<h3 id="morpological-transformations">Morpological Transformations</h3>
+<p>Once we convert our images to masks, our ability to remove noise doesn't stop there, we can use <strong>Morpological Transformations</strong>, most notably, <strong>Erosions</strong> and <strong>Dilations</strong> to further remove noise in our mask. </p>
+<table>
+<thead>
+<tr>
+<th align="center">Original Image</th>
+<th align="center">Dilated Image</th>
+<th align="center">Eroded Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="image" src="../img_cv/j.png" /></td>
+<td align="center"><img alt="image" src="../img_cv/dilation.png" /></td>
+<td align="center"><img alt="image" src="../img_cv/erosion.png" /></td>
+</tr>
+</tbody>
+</table>
+<p>These morphological transformations work to change the images shape. They can remove noise, and further highlight useful features in our images.</p>
+<p>There are many other morphological Transformations available - <a href="https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html">see here</a>.</p>
+<p>We can apply these transformations to our mask with the following code.</p>
+<pre><code class="language-python">#Applies an erosion, followed by a dilation with 3 iterations each (the more iterations, the stronger the transformation)
+
+mask = cv2.erode(mask, None, iterations=3)
+mask = cv2.dilate(mask, None, iterations=3)
+
+</code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">Mask without Morpological Transformations</th>
+<th align="center">Mask with Morpological Transformations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="image" src="../img_cv/maskno.png" /></td>
+<td align="center"><img alt="image" src="../img_cv/trans.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="contour-detection">Contour Detection</h3>
+<p>From the mask, we can get the contours of the mask, or the boundary of each masked object. </p>
+<pre><code class="language-python">contours = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+contours = imutils.grab_contours(contours)
+
+for contour in contours: 
+    cv2.drawContours(frame, contour, -1, (0,255,0), 3)
+</code></pre>
+<p><img alt="image" src="../img_cv/contour.png" /></p>
+<p>Next, using <code>minAreaRect()</code>, we can get the minimum area rectangle that covers the contours.</p>
+<pre><code class="language-python">rect = cv2.minAreaRect(contour)
+box = cv2.boxPoints(rect)
+box = np.int0(box)
+</code></pre>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p><strong>Exercise 3</strong></p>
+<p>Take the following image and detect the tennis balls!</p>
+<p><img alt="image" src="../img_cv/tennis_balls.png" /></p>
 <ol>
-<li>
-<p>Open the <strong>Realtime Database</strong> service on the sidebar:</p>
-<p><img alt="" src="realtime-db-sidenav.png" /></p>
-</li>
-<li>
-<p>Start in <strong>Test Mode</strong>.</p>
-<p><img alt="" src="https://lh5.googleusercontent.com/kOvoPWYkoMVs0Dn9kkAwimnZ8TScdBc_R54oLHmhbGXQ0MrrLlhmIop1qC-vMwQoTb5LtrB-0AgAaIDlSDZnAhgoKEnmFPTggTAx5PXvFrizy-8m4ygPedXT3a-RR5SU-zCTQ-Bv" /></p>
-</li>
-<li>
-<p>Click on the <strong>Rules</strong> tab and verify read and write access is set to <code>true</code>.</p>
-<p><img alt="" src="https://lh3.googleusercontent.com/p0bQm-l1TuitaagDSDMB6n1V_M950JddpQQ7L7YHUNxv8lpHazUmkW3JIThI18o4DWp8smniKnj8CWeFhvf4yvdsn7-qcVgOw6Q2V-WB7J-VeVzN4XK5nUts-vWf2Rz5LQyJHLN0" /></p>
-</li>
+<li>Apply a blur to the image</li>
+<li>Threshold the image.</li>
+<li>Erode, then dialte the image</li>
+<li>Plot a box around each tennis ball</li>
 </ol>
-<h3 id="obtaining-keys">Obtaining Keys</h3>
-<h4 id="adding-a-service-account">Adding a Service Account</h4>
-<p>To connect our Raspberry Pi to Firebase, we need to generate a Service Account key to use Firebase Admin SDK. </p>
-<ol>
-<li>Click on the project's <strong>Settings</strong> icon and click on <strong>Project Settings</strong></li>
-<li>Navigate to the <strong>Service Accounts</strong> tab.</li>
-<li>Click <strong>Generate new Private Key</strong>.
-    <img alt="" src="https://lh5.googleusercontent.com/0iqy0J5bxSS5JDrDVZf9Iv6F3p0MyTAHkYqbAIMUhUMA7gii5wNjQAxKas5dmpJ_YH83Yf2rMGPijlMt6UOTiSMedqF7UgsFMQQxuNCY2CI6zP6knESJYJuVSJ4jA5cFS0_1_fIU" /></li>
-<li>Save this project key somewhere where we can later copy it to the Raspberry Pi.</li>
-</ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Your private key gives access to your project's Firebase services. Keep it confidential and never store it in a public repository. Store this file securely, because your new key can't be recovered if lost.</p>
-<p>If using Git, always add the name of this file to the project's .gitignore.</p>
+<p>Extra: Experiment more with the thresholds and try it on a video! (Ask Dillon for a tennis ball)</p>
 </div>
-<h4 id="adding-an-app">Adding an App</h4>
-<ol>
-<li>Also in <strong>Settings</strong>, under <strong>General</strong> tab and <strong>Your Apps</strong> section, click <strong>Add App</strong>. Select the <strong>Web</strong> platform.</li>
-<li>Fill out the form<ol>
-<li>Any name is ok. I recommend <em>Web App</em>.</li>
-<li>We won't be using Firebase Hosting for now. (instead we'll use GitHub Pages later on)</li>
-</ol>
-</li>
-<li>It should now spit out some info under <strong>Add Firebase SDK</strong>. The important part we care about is the <code>var firebaseConfig</code> dictionary. We can always come back to view this information anytime. <pre><code>const firebaseConfig = {
-    apiKey: ...
-    authDomain: ...
-    databaseURL: ...
-    projectId: ...
-    storageBucket: ...
-    messagingSenderId: ...
-    appId: ...
-    measurementId: ...
-};
-</code></pre>
-</li>
-</ol>
-<p>We won't need this App key until the Frontend portion.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Technically, none of the <code>var firebaseConfig</code> fields are sensitive information. In fact, this information will later be necessary for the end user to access our app. It is OK to commit this to the Git repository.</p>
-</div>
-<h2 id="connecting-to-firebase">Connecting to Firebase</h2>
-<p>To send data to the cloud, our Raspberry Pi needs to connect to Firebase.</p>
-<p>We first import the libraries and initialize Firebase Admin:</p>
-<pre><code>import firebase_admin
-from firebase_admin import credentials
-cred = credentials.Certificate( 'PATH_TO_FIREBASE_KEY' )
-firebase_admin.initialize_app( cred, { 'databaseURL':  'LINK_TO_DATABASE_URL' } )
-</code></pre>
-<ul>
-<li><strong>replace PATH_TO_FIREBASE_KEY</strong> with the appropriate path</li>
-<li><strong>replace LINK_TO_DATABASE_URL</strong> with the appropriate URL</li>
-</ul>
-<p>We also need to import the library for database and get a Reference.</p>
-<pre><code>from firebase_admin import db
-db_ref = db.reference( "PATH_TO_REFERENCE" )
-db_ref.set( VALUE )
-data = db_ref.get()
-</code></pre>
-<ul>
-<li><strong>replace PATH_TO_REFERENCE</strong> with the appropriate path</li>
-<li><strong>replace VALUE</strong> with the appropriate value</li>
-</ul>
-<h4 id="complete-code">Complete Code</h4>
-<p>Should look similar to this:</p>
-<pre><code>import firebase_admin
-from firebase_admin import credentials
-from firebase_admin import db
-import adafruit_dht
-import board
-import time
-
-dht_pin = board.D4
-dht_sensor = adafruit_dht.DHT22(dht_pin)
-
-cred = credentials.Certificate( 'PATH_TO_FIREBASE_KEY' )
-firebase_admin.initialize_app( cred, { 'databaseURL':  'LINK_TO_DATABASE_URL' } )
-
-while True:
-    temp = dht_sensor.temperature
-    hum = dht_sensor.humidity
-
-    print("Temperature =", temp, 'C')
-    print("Humidity =", hum, '%')
-
-    temp_ref = db.reference( "sensor/temperature" )
-    temp_ref.set( temp )
-    hum_ref = db.reference( "sensor/humidity" )
-    hum_ref.set( hum )
-
-    time.sleep( 10 )
-</code></pre>
+<table>
+<thead>
+<tr>
+<th align="center">Original Image</th>
+<th align="center">Detected Tennis Balls</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><img alt="image" src="../img_cv/tennis_balls.png" /></td>
+<td align="center"><img alt="image" src="../img_cv/box.png" /></td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -978,7 +920,7 @@ while True:
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../iot-project/" class="md-footer__link md-footer__link--prev" aria-label="Previous: IOT Intro" rel="prev">
+        <a href="../rpi/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Raspberry Pi" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -987,20 +929,20 @@ while True:
               <span class="md-footer__direction">
                 Previous
               </span>
-              IOT Intro
+              Raspberry Pi
             </div>
           </div>
         </a>
       
       
         
-        <a href="../web/" class="md-footer__link md-footer__link--next" aria-label="Next: VueJS" rel="next">
+        <a href="../iot-project/" class="md-footer__link md-footer__link--next" aria-label="Next: IOT Intro" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              VueJS
+              IOT Intro
             </div>
           </div>
           <div class="md-footer__button md-icon">
