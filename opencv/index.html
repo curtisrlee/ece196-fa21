@@ -640,6 +640,7 @@
                 
                 
                 <h1 id="ece-196-intro-to-opencv">ECE 196 Intro to OpenCV</h1>
+<p><em>Written by Dillon Hicks</em></p>
 <div class="admonition quote">
 <p class="admonition-title">Quote</p>
 <p><strong><em>What is OpenCV?</em></strong><br />
@@ -668,7 +669,7 @@ import numpy as np
 </code></pre>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>When installing OpenCV from <code>pip</code>, we get the default version, which doesn't have many useful add-ons such as CUDA-acceleration (Nvidia GPU acceleration). Although this installation takes a very long time (hours in many cases), it may be preferable when GPU acceleration is available to speed up processing times. </p>
+<p>When installing OpenCV from <code>pip</code>, we get the default version, which doesn't have many useful add-ons such as CUDA-acceleration (Nvidia GPU acceleration). We can compile OpenCV from directly from source, but  this installation takes a very long time (hours in many cases). However, compiling from source may be preferable when GPU acceleration is available to speed up processing times. </p>
 </div>
 <h2 id="operating-on-images">Operating on Images</h2>
 <p>The first obvious step for basic computer vision functions is opening single images. There are some functions that make this very easy to do.</p>
@@ -684,7 +685,7 @@ my_image = cv2.imread(name)
 cv2.imshow(&quot;Image&quot;, my_image)
 </code></pre>
 <p>You may then notice that it is a bit tough to close this window. To close this window easily, you can set a wait key using <code>waitKey()</code>, and close OpenCV windows using <code>destroyAllWindows()</code>. If this wait key is pressed, then the next line will run and  all windows will be destroyed (closed)</p>
-<pre><code class="language-python">#If q is pressed, close all opencv windows, waits x seconds for q to be pressed
+<pre><code class="language-python">#If q is pressed during x milliseconds wait time, close all opencv windows
 x = 0
 if cv2.waitKey(x) &amp; 0xFF == ord('q'):
     cv2.destroyAllWindows()
